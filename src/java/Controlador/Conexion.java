@@ -27,8 +27,8 @@ public class Conexion {
     public void conectar() throws Exception {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            cn = DriverManager.getConnection("jdbc:mysql://node58556-env-0941534.ric.jelastic.vps-host.net:3306/bdasesoriasacademicas?useUnicode=true&characterEncoding=utf-8&user=root&password=ISFbrh80716");
-            //cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdasesoriasacademicas?useUnicode=true&characterEncoding=utf-8&user=root&password=");
+            //cn = DriverManager.getConnection("jdbc:mysql://node58556-env-0941534.ric.jelastic.vps-host.net:3306/bdasesoriasacademicas?useUnicode=true&characterEncoding=utf-8&user=root&password=ISFbrh80716");
+            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdasesoriasacademicas?useUnicode=true&characterEncoding=utf-8&user=root&password=");
         }catch(ClassNotFoundException e){
             System.err.printf("Error: " + e);
         }catch(SQLException e){
