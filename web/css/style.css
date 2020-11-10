@@ -1,0 +1,594 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/02/2018, 10:25:28 AM
+    Author     : Alex
+*/
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background-color: #1C242A;
+    float: left;
+}
+
+.menu_bar {
+    display:none;
+}
+
+header#headerIngresar {
+    background-color: #1C242A;
+    float: left;
+    width: 100%
+}
+
+div.cabecera {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    float: left;
+    width: 40%;
+}
+
+div.cabeceraIngresar {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    float: left;
+    width: 100%;
+}
+
+p#tituloCabecera {
+    font-size: 22px;
+    color: white;
+    margin-left: 10px;
+}
+
+h1, h3 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+p#tituloIngresar {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+p#contenidoIngresar {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+div.imgcabecera {
+    float: left;
+    width: 60%;
+}
+
+img#imagenCabecera {
+    width: 100%;
+    border: 0;
+}
+
+a#enlaceBanner, a#enlaceImagen {
+    text-decoration: none;
+    color: black;
+}
+
+a.enlaceLogin {
+    color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    position: absolute;
+}
+
+a#enlaceMiCuenta {
+    color: white;
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 10px;
+    text-align: right;
+    position: absolute;
+}
+
+nav {
+    clear: both;
+}
+
+ul#l01{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1C242A;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+ul#l02{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul#l01 > li {
+    float: left;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+ul#l01 li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul#l01 li a:hover{
+    color: #E7CE11;
+}
+
+ul#l01 li a:active{
+    color: #1C242A;
+}
+
+ul#l01 li ul {
+    height: 0px;
+    position: absolute;
+    min-width: 200px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+ul#l01 li:hover > ul {
+    display: block;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    height: 100px;
+}
+
+ul#l02 li {
+    position: relative;
+    background-color: #1C242A;
+}
+
+ul#l02 li:first-child{
+    border-radius: 3px 3px 0 0;
+    margin-top: 5px;
+    position: relative;
+}
+
+ul#l02 li:first-child:before{ /* Punta de submenu */
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 5px solid transparent;
+    border-bottom-color: #1C242A;
+    left: 25%;
+    top: -10px;
+    margin-left: -5px;
+}
+
+ul.breadcrumb{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+ul.breadcrumb > li{
+    float: left;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+section {
+    background-color: #FDFDFD;  
+    padding: 20px;
+    float: left;
+    width: 100%;
+}
+
+section#contenido{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+p.contenido {
+    text-align: justify;
+}
+
+article.asignaturas {
+    margin: 5px;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+table.tblasignaturas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.tblasignaturas th {
+    text-align: left;
+    color: white;
+    background-color: #1C242A;
+    padding: 5px;
+}
+
+table.tblasignaturas td {
+    padding: 10px;
+    display: none;
+}
+
+article.imgIngresar{
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+img#imagenIngresar{
+    padding-top: 10%;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+article.ingresar{
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+article.registrar{
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+form#formLogin, form#formRegistrar, form#formRecuperarContrasena{
+    float: left;
+}
+
+section#working {
+    text-align: center;
+}
+
+section.datoformulario {
+    margin: 0;
+    width: 50%;
+}
+
+section.confirmarformulario {
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+
+input.contformulario, select.contformulario, input.contformularioDatosHorario , 
+input.contformularioDatosClase, input.contformularioDatosEstudiante{
+    padding: 10px;
+    width: 100%;
+}
+
+label.obligatorio:before {
+    content: "* " ;
+    color: #ff0000;   
+}
+
+p#indicadorRequerido {
+    color: #ff0000;
+}
+
+p.confirmacionExitosa {
+    background-color: #E5FDDB;
+    color: #68BB62;
+    border-radius: 3px;
+    padding: 10px;
+    display: none;
+}
+
+p.confirmacionFallida {
+    background-color: #FDDFDF;
+    color: #EC4D4F;
+    border-radius: 3px;
+    padding: 10px;
+    display: none;
+}
+
+input, button {
+    padding: 10px;
+}
+
+input[type=submit], button[type=submit], button[type=reset], button[type=button]{
+    color: #1C242A;
+    font-weight: bold;
+    background-color: #BDC2D1;
+    border-radius: 3px;
+    border-style: none;
+}
+
+input[type=submit]:hover, button[type=submit]:hover, button[type=reset]:hover, button[type=button]:hover{
+    color: white;
+    font-weight: bold;
+    background-color: #E74043;
+    border-radius: 3px;
+    border-style: none;
+}
+
+input#archivo {
+    width: 100%;
+    font-size: 16px;
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+progress#progreso {
+    text-align: right;
+}
+
+.container{
+    float: left;
+    padding: 20px;
+    background-color: white;
+}
+
+.bloqueIzquierdo {
+    width: 35%;
+}
+
+.page_navigation {
+    padding-bottom: 10px;
+    width: 30%;    
+}
+
+.bloqueDerecho{
+    width: 35%;
+}
+
+.page_navigation a {
+    padding: 3px 5px;
+    margin: 2px;
+    color: white;
+    text-decoration: none;
+    float: left;
+    background-color: #E6344A;
+}
+.active_page {
+    background-color:white !important;
+    color:black !important;
+}
+
+table#datos {
+    display: inline-table;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+}
+
+table#datos th {
+    text-align: center;
+    color: white;
+    background-color: #1C242A;
+    padding: 10px;
+}
+
+table#datos td {
+    text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+div.acciones ul {
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+div.acciones ul li{
+    float: left;
+}
+
+div.acciones ul li a{
+    display: inline-block;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+section#paginacion ul{
+    list-style: none;
+    text-align: center;
+}
+
+section#paginacion ul li{
+    display: inline-block;
+}
+
+section#paginacion ul li a{
+    display:block;
+    text-decoration: none;
+}
+
+div.social {
+    position: fixed;
+    top: 200px;
+
+}
+
+div.social ul {
+    padding: 0;
+    list-style: none;
+}
+
+div.social ul li a{
+    display: inline-block;
+    color: white;
+    background: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: padding 0.5s;
+    transition: padding 0.5s;
+}
+
+div.social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+div.social ul li .icon-whatsapp {
+    background: #25d366;
+}
+
+div.social ul li a:hover {
+    padding: 10px 40px;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    background-color: #1C242A;
+    color: #ffffff;
+}
+
+div.textFooter {
+    background-color: #1C242A;
+    width: 100%;
+    float: left;
+}
+
+@media (max-width: 320px) {
+    body, article, section, form, table, textarea, input, label, div.cabecera, div.imgcabecera, article.asignaturas, section.datoformulario, img#imgworking, div.textFooter, div.validacion, article.ingresar, form#formLogin, form#formRegistrar, form#formRecuperarContrasena, article.imgIngresar, header, ul.breadcrumb{
+        width: 100%;
+        font-size: calc(1em + 1vw);
+    }
+
+    body{
+        padding-top: 80px;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #E6344A;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    nav {
+        width: 50%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+    }
+
+    nav #l01{
+        padding: 0;
+        border-radius: 3px;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    nav #l01 li a {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li:hover #l02 {
+        display: none;
+    }
+
+    nav ul li #l02 {
+        width: 100%;
+        position: relative;
+    }
+
+    nav ul li #l02 li a {
+        margin-left: 20px;
+    }   
+
+    #datos {
+        display: hidden;
+    }
+
+    .bloqueIzquierdo {
+        width: 25%;
+    }
+
+    .page_navigation{
+        width: 50%;
+    }
+
+    .bloqueDerecho {
+        width: 25%;
+    }
+
+    .columnDudas{
+        display:none;
+    }
+}
+
+
