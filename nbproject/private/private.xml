@@ -12,20 +12,8 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/src/java/servlets/SolicitarClasePresencial.java</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/web/EliminarTrabajo.jsp</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/src/java/servlets/EliminarTrabajo.java</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/src/java/servlets/EditarTrabajo.java</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/web/solicitaTuClaseVirtual.jsp</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/web/index.jsp</file>
+            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/web/EditarClasePresencial.jsp</file>
             <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/src/java/Controlador/Conexion.java</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/src/java/servlets/bajarArchivo.java</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/web/css/style.css</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/web/dejanosTuTrabajo.jsp</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/web/NuevoTrabajo.jsp</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/src/java/Controlador/Consultas.java</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/src/java/servlets/SubirArchivo.java</file>
-            <file>file:/C:/Users/90jal/Documents/NetBeansProjects/AsesoriasAcademicasWeb/src/java/servlets/DejarTrabajo.java</file>
         </group>
     </open-files>
 </project-private>
